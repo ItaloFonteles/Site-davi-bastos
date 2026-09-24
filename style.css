@@ -100,9 +100,9 @@ nav a:hover {
     color: var(--white);
 }
 
-/* Hero Section */
+/* Hero Section (Caminho da imagem atualizado para img/tema.jpg) */
 .hero {
-    background: linear-gradient(rgba(34, 34, 34, 0.85), rgba(34, 34, 34, 0.85)), url('tema.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(34, 34, 34, 0.85), rgba(34, 34, 34, 0.85)), url('img/tema.jpg') no-repeat center center/cover;
     color: var(--white);
     padding: 100px 0;
     text-align: center;
@@ -198,7 +198,7 @@ nav a:hover {
     color: #666;
 }
 
-/* Seção Sobre com Foto - Ajuste de Enquadramento */
+/* Seção Sobre com Foto */
 .about-image-box {
     text-align: center;
     background: var(--white);
@@ -245,9 +245,9 @@ nav a:hover {
     color: var(--bg-dark);
 }
 
-/* Secção de Localização (Fundo Expandido com tema2.jpg) */
+/* Secção de Localização com a imagem de fundo atualizada para img/tema2.jpg */
 .location-section {
-    background: linear-gradient(rgba(26, 26, 26, 0.88), rgba(26, 26, 26, 0.88)), url('tema2.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(26, 26, 26, 0.88), rgba(26, 26, 26, 0.88)), url('img/tema2.jpg') no-repeat center center/cover;
     padding: 80px 0;
 }
 
@@ -263,7 +263,7 @@ nav a:hover {
     background: var(--white);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     height: 100%;
 }
 
@@ -285,15 +285,14 @@ nav a:hover {
     color: var(--accent-copper);
 }
 
-/* Estilos para os links do Instagram */
 .insta-link {
-    color: var(--text-color);
+    color: var(--accent-copper);
     text-decoration: none;
-    transition: 0.3s;
+    font-weight: 600;
 }
 
 .insta-link:hover {
-    color: var(--accent-copper);
+    text-decoration: underline;
 }
 
 .map-box {
@@ -430,18 +429,6 @@ nav a:hover {
     margin-bottom: 8px;
 }
 
-.modal-alert {
-    background-color: #fbf1ed;
-    border: 1px solid #ebd3cd;
-    color: var(--bg-darker);
-    padding: 12px 15px;
-    border-radius: 5px;
-    font-size: 13px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .modal-whatsapp-btn {
     display: flex;
     justify-content: center;
@@ -461,7 +448,7 @@ nav a:hover {
     background-color: #4a0d1d;
 }
 
-/* Footer (Rodapé sólido para fechar a página) */
+/* Footer */
 footer {
     background-color: var(--bg-darker);
     color: #aaaaaa;
@@ -483,18 +470,17 @@ footer .logo h2 {
 }
 
 .social-footer {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .social-footer a {
-    color: var(--white);
-    font-size: 24px;
-    text-decoration: none;
+    color: var(--accent-copper);
+    font-size: 20px;
     transition: 0.3s;
 }
 
 .social-footer a:hover {
-    color: var(--accent-copper);
+    color: var(--white);
 }
 
 .dev-credits {

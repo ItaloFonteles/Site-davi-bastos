@@ -9,8 +9,8 @@
     <!-- FontAwesome para Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Favicon (Logótipo na aba do navegador) -->
-    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg">
 </head>
 <body>
 
@@ -48,11 +48,12 @@
         </div>
     </section>
 
-    <!-- Seção Sobre (Fotografia do Advogado e Biografia) -->
+    <!-- Seção Sobre -->
     <section id="sobre" class="section sobre">
         <div class="container grid-2">
             <div class="about-image-box">
-                <img src="foto_perfil_2.jpg" alt="Dr. Carlos Davi Vieira Bastos" class="about-photo">
+                <!-- Caminho atualizado para a pasta img -->
+                <img src="img/foto_perfil.jpg" alt="Dr. Carlos Davi Vieira Bastos" class="about-photo">
                 <div class="about-photo-caption">DR. CARLOS DAVI VIEIRA BASTOS</div>
             </div>
             <div class="about-text-box">
@@ -74,7 +75,6 @@
             <p class="subtitle">Clique numa área para ver os detalhes completos dos serviços oferecidos.</p>
             <div class="grid-3">
                 
-                <!-- Card 1: Direito Imobiliário -->
                 <div class="card-service" onclick="openModal('modal-imobiliario')">
                     <i class="fas fa-building"></i>
                     <h4>Direito Imobiliário</h4>
@@ -82,7 +82,6 @@
                     <span class="card-link">Ver detalhes &rarr;</span>
                 </div>
 
-                <!-- Card 2: Direito Empresarial -->
                 <div class="card-service" onclick="openModal('modal-empresarial')">
                     <i class="fas fa-handshake"></i>
                     <h4>Direito Empresarial</h4>
@@ -90,7 +89,6 @@
                     <span class="card-link">Ver detalhes &rarr;</span>
                 </div>
 
-                <!-- Card 3: Inventário e Sucessões -->
                 <div class="card-service" onclick="openModal('modal-inventario')">
                     <i class="fas fa-balance-scale"></i>
                     <h4>Inventário e Sucessões</h4>
@@ -113,7 +111,6 @@
                     <p><i class="fas fa-map-marker-alt"></i> Rua Cisne, 338 | Cidade Satélite<br>Boa Vista - Roraima (CEP: 69.317-496)</p>
                     <p><i class="fas fa-envelope"></i> contato@davibastos.adv.br</p>
                     <p><i class="fas fa-phone-alt"></i> (51) 98186-2427</p>
-                    <!-- Link do Instagram -->
                     <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/drdavibastos" target="_blank" class="insta-link">@drdavibastos</a></p>
                     
                     <a href="https://wa.me/5551981862427?text=Olá%20Dr.%20Davi,%20gostaria%20de%20saber%20como%20chegar%20ao%20escritório." target="_blank" class="modal-whatsapp-btn" style="margin-top: 20px;">
@@ -134,9 +131,7 @@
         </div>
     </section>
 
-    <!-- ================= JANELAS MODAIS (POP-UPS) ================= -->
-
-    <!-- Modal 1: Imobiliário -->
+    <!-- Modais -->
     <div id="modal-imobiliario" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('modal-imobiliario')">&times;</button>
@@ -144,8 +139,7 @@
                 <h3>Direito Imobiliário</h3>
             </div>
             <div class="modal-body">
-                <p class="modal-desc">Assessoria jurídica especializada em compra, venda, locação e regularização de imóveis. Atuamos com segurança e transparência para proteger o seu património em todas as etapas.</p>
-                
+                <p class="modal-desc">Assessoria jurídica especializada em compra, venda, locação e regularização de imóveis.</p>
                 <h4>Serviços Oferecidos:</h4>
                 <ul>
                     <li>Compra e Venda de Imóveis</li>
@@ -154,11 +148,6 @@
                     <li>Usucapião Judicial e Extrajudicial</li>
                     <li>Locação Comercial e Residencial</li>
                 </ul>
-
-                <div class="modal-alert">
-                    Precisa de orientação em questões imobiliárias? Entre em contacto.
-                </div>
-
                 <a href="https://wa.me/5551981862427?text=Olá%20Dr.%20Davi,%20gostaria%20de%20conversar%20sobre%20Direito%20Imobiliário." target="_blank" class="modal-whatsapp-btn">
                     <i class="fab fa-whatsapp"></i> Agendar Consulta via WhatsApp
                 </a>
@@ -166,7 +155,6 @@
         </div>
     </div>
 
-    <!-- Modal 2: Empresarial -->
     <div id="modal-empresarial" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('modal-empresarial')">&times;</button>
@@ -174,8 +162,7 @@
                 <h3>Direito Empresarial</h3>
             </div>
             <div class="modal-body">
-                <p class="modal-desc">Suporte jurídico completo para abertura, gestão e proteção do seu negócio. Garantimos segurança jurídica nas suas operações empresariais.</p>
-                
+                <p class="modal-desc">Suporte jurídico completo para abertura, gestão e proteção do seu negócio.</p>
                 <h4>Serviços Oferecidos:</h4>
                 <ul>
                     <li>Constituição e Alteração de Empresas</li>
@@ -184,11 +171,6 @@
                     <li>Assessoria Societária</li>
                     <li>Consultoria Jurídica Preventiva</li>
                 </ul>
-
-                <div class="modal-alert">
-                    Precisa de proteger o seu negócio? Entre em contacto.
-                </div>
-
                 <a href="https://wa.me/5551981862427?text=Olá%20Dr.%20Davi,%20gostaria%20de%20conversar%20sobre%20Direito%20Empresarial." target="_blank" class="modal-whatsapp-btn">
                     <i class="fab fa-whatsapp"></i> Agendar Consulta via WhatsApp
                 </a>
@@ -196,7 +178,6 @@
         </div>
     </div>
 
-    <!-- Modal 3: Inventário -->
     <div id="modal-inventario" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('modal-inventario')">&times;</button>
@@ -204,8 +185,7 @@
                 <h3>Inventário e Sucessões</h3>
             </div>
             <div class="modal-body">
-                <p class="modal-desc">Serviço especializado em inventário e partilha de bens, com atuação tanto na esfera judicial quanto extrajudicial. Garantimos agilidade na resolução e segurança jurídica na transmissão do património aos herdeiros.</p>
-                
+                <p class="modal-desc">Serviço especializado em inventário e partilha de bens, judicial e extrajudicial.</p>
                 <h4>Serviços Oferecidos:</h4>
                 <ul>
                     <li>Inventário Extrajudicial em Cartório</li>
@@ -214,11 +194,6 @@
                     <li>Elaboração de Testamentos</li>
                     <li>Planeamento Sucessório</li>
                 </ul>
-
-                <div class="modal-alert">
-                    Precisa de resolver um inventário? Entre em contacto.
-                </div>
-
                 <a href="https://wa.me/5551981862427?text=Olá%20Dr.%20Davi,%20gostaria%20de%20conversar%20sobre%20Inventário%20e%20Sucessões." target="_blank" class="modal-whatsapp-btn">
                     <i class="fab fa-whatsapp"></i> Agendar Consulta via WhatsApp
                 </a>
@@ -233,20 +208,17 @@
                 <h2>DAVI BASTOS</h2>
                 <p>ADVOGADO & CONSULTOR</p>
             </div>
-            
-            <!-- Ícone do Instagram no Rodapé -->
             <div class="social-footer">
                 <a href="https://www.instagram.com/drdavibastos" target="_blank" title="Siga no Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
-            
             <p>&copy; 2026 Carlos Davi Vieira Bastos. Todos os direitos reservados.</p>
             <p class="dev-credits">Desenvolvido sob medida.</p>
         </div>
     </footer>
 
-    <!-- Script Simples para abrir e fechar as janelas modais -->
+    <!-- Script das Modais -->
     <script>
         function openModal(modalId) {
             document.getElementById(modalId).style.display = 'flex';
