@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Bastos | Advogado & Consultor</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+
+    <!-- Cabeçalho / Menu -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-db">DB</span>
+                <div class="logo-text">
+                    <h1>DAVI BASTOS</h1>
+                    <p>ADVOGADO & CONSULTOR</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#atuacao">Áreas de Atuação</a>
+                <a href="#localizacao">Localização</a>
+                <a href="#contato" class="btn-nav">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="badge">Consultoria Jurídica Estratégica para Empresas</span>
+            <h2>Soluções jurídicas para proteger e impulsionar o seu negócio</h2>
+            <p>Atuação focada em segurança contratual, prevenção de riscos e recuperação de créditos com eficiência e rigor técnico.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5551981862427?text=Olá%20Dr.%20Davi,%20vim%20pelo%20site%20e%20gostaria%20de%20conversar." target="_blank" class="btn-primary">
+                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                </a>
+                <a href="#atuacao" class="btn-secondary">Conhecer Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre (Fotografia do Advogado e Biografia) -->
+    <section id="sobre" class="section sobre">
+        <div class="container grid-2">
+            <div class="about-image-box">
+                <img src="foto_perfil.jpg" alt="Dr. Carlos Davi Vieira Bastos" class="about-photo">
+                <div class="about-photo-caption">DR. CARLOS DAVI VIEIRA BASTOS</div>
+            </div>
+            <div class="about-text-box">
+                <h3>Compromisso com a Excelência e Soluções Estratégicas</h3>
+                <p>O escritório de advocacia e consultoria de <strong>Carlos Davi Vieira Bastos</strong> oferece suporte jurídico completo para empresas e particulares, com atendimento personalizado e visão voltada para resultados.</p>
+                <p>Com sólida formação e atuação dedicada, o escritório preza pela transparência, agilidade e rigor técnico na condução de cada caso.</p>
+                <div class="oab-box">
+                    <p><i class="fas fa-balance-scale"></i> <strong>OAB/RS</strong> 99.217</p>
+                    <p><i class="fas fa-balance-scale"></i> <strong>OAB/RR</strong> 559-A</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Áreas de Atuação -->
+    <section id="atuacao" class="section atuacao">
+        <div class="container">
+            <h3>Áreas de Atuação</h3>
+            <p class="subtitle">Clique numa área para ver os detalhes completos dos serviços oferecidos.</p>
+            <div class="grid-3">
+                
+                <!-- Card 1: Direito Imobiliário -->
+                <div class="card-service" onclick="openModal('modal-imobiliario')">
+                    <i class="fas fa-building"></i>
+                    <h4>Direito Imobiliário</h4>
+                    <p>Assessoria jurídica especializada em compra, venda, locação e regularização de imóveis.</p>
+                    <span class="card-link">Ver detalhes &rarr;</span>
+                </div>
+
+                <!-- Card 2: Direito Empresarial -->
+                <div class="card-service" onclick="openModal('modal-empresarial')">
+                    <i class="fas fa-handshake"></i>
+                    <h4>Direito Empresarial</h4>
+                    <p>Suporte jurídico completo para abertura, gestão, contratos e proteção do seu negócio.</p>
+                    <span class="card-link">Ver detalhes &rarr;</span>
+                </div>
+
+                <!-- Card 3: Inventário e Sucessões -->
+                <div class="card-service" onclick="openModal('modal-inventario')">
+                    <i class="fas fa-balance-scale"></i>
+                    <h4>Inventário e Sucessões</h4>
+                    <p>Serviço especializado em inventário, partilha de bens e planeamento sucessório.</p>
+                    <span class="card-link">Ver detalhes &rarr;</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Localização & Mapa -->
+    <section id="localizacao" class="section location-section">
+        <div class="container">
+            <h3>Onde Estamos</h3>
+            <p class="subtitle">Visite o nosso escritório ou entre em contacto pelos nossos canais.</p>
+            <div class="grid-2 location-grid">
+                <div class="card-info">
+                    <h4>Localização e Atendimento</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Cisne, 338 | Cidade Satélite<br>Boa Vista - Roraima (CEP: 69.317-496)</p>
+                    <p><i class="fas fa-envelope"></i> contato@davibastos.adv.br</p>
+                    <p><i class="fas fa-phone-alt"></i> (51) 98186-2427</p>
+                    <!-- Link do Instagram Adicionado Aqui -->
+                    <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/drdavibastos" target="_blank" class="insta-link">@drdavibastos</a></p>
+                    
+                    <a href="https://wa.me/5551981862427?text=Olá%20Dr.%20Davi,%20gostaria%20de%20saber%20como%20chegar%20ao%20escritório." target="_blank" class="modal-whatsapp-btn" style="margin-top: 20px;">
+                        <i class="fab fa-whatsapp"></i> Traçar Rota / WhatsApp
+                    </a>
+                </div>
+                <div class="map-box">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8166541624634!2d-60.672!3d2.823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8692f4e3c5a6b7d9%3A0x1!2sRua%20Cisne%2C%20338%20-%20Cidade%20Sat%C3%A9lite%2C%20Boa%20Vista%20-%20RR!5e0!3m2!1spt-BR!2sbr!4v1650000000000!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 8px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= JANELAS MODAIS (POP-UPS) ================= -->
+
+    <!-- Modal 1: Imobiliário -->
+    <div id="modal-imobiliario" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-imobiliario')">&times;</button>
+            <div class="modal-header">
+                <h3>Direito Imobiliário</h3>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">Assessoria jurídica especializada em compra, venda, locação e regularização de imóveis. Atuamos com segurança e transparência para proteger o seu património em todas as etapas.</p>
+                
+                <h4>Serviços Oferecidos:</h4>
+                <ul>
+                    <li>Compra e Venda de Imóveis</li>
+                    <li>Elaboração e Análise de Contratos</li>
+                    <li>Regularização de Imóveis</li>
+                    <li>Usucapião Judicial e Extrajudicial</li>
+                    <li>Locação Comercial e Residencial</li>
+                </ul>
+
+                <div class="modal-alert">
+                    Precisa de orientação em questões imobiliárias? Entre em contacto.
+                </div>
+
+                <a href="https://wa.me/5551981862427?text=Olá%20Dr.%20Davi,%20gostaria%20de%20conversar%20sobre%20Direito%20Imobiliário." target="_blank" class="modal-whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Agendar Consulta via WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Empresarial -->
+    <div id="modal-empresarial" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-empresarial')">&times;</button>
+            <div class="modal-header">
+                <h3>Direito Empresarial</h3>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">Suporte jurídico completo para abertura, gestão e proteção do seu negócio. Garantimos segurança jurídica nas suas operações empresariais.</p>
+                
+                <h4>Serviços Oferecidos:</h4>
+                <ul>
+                    <li>Constituição e Alteração de Empresas</li>
+                    <li>Elaboração de Contratos Comerciais</li>
+                    <li>Recuperação Extrajudicial de Crédito</li>
+                    <li>Assessoria Societária</li>
+                    <li>Consultoria Jurídica Preventiva</li>
+                </ul>
+
+                <div class="modal-alert">
+                    Precisa de proteger o seu negócio? Entre em contacto.
+                </div>
+
+                <a href="https://wa.me/5551981862427?text=Olá%20Dr.%20Davi,%20gostaria%20de%20conversar%20sobre%20Direito%20Empresarial." target="_blank" class="modal-whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Agendar Consulta via WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Inventário -->
+    <div id="modal-inventario" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-inventario')">&times;</button>
+            <div class="modal-header">
+                <h3>Inventário e Sucessões</h3>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">Serviço especializado em inventário e partilha de bens, com atuação tanto na esfera judicial quanto extrajudicial. Garantimos agilidade na resolução e segurança jurídica na transmissão do património aos herdeiros.</p>
+                
+                <h4>Serviços Oferecidos:</h4>
+                <ul>
+                    <li>Inventário Extrajudicial em Cartório</li>
+                    <li>Inventário Judicial</li>
+                    <li>Partilha Amigável de Bens</li>
+                    <li>Elaboração de Testamentos</li>
+                    <li>Planeamento Sucessório</li>
+                </ul>
+
+                <div class="modal-alert">
+                    Precisa de resolver um inventário? Entre em contacto.
+                </div>
+
+                <a href="https://wa.me/5551981862427?text=Olá%20Dr.%20Davi,%20gostaria%20de%20conversar%20sobre%20Inventário%20e%20Sucessões." target="_blank" class="modal-whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Agendar Consulta via WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <div class="container footer-content">
+            <div class="logo">
+                <h2>DAVI BASTOS</h2>
+                <p>ADVOGADO & CONSULTOR</p>
+            </div>
+            
+            <!-- Ícone do Instagram no Rodapé -->
+            <div class="social-footer">
+                <a href="https://www.instagram.com/drdavibastos" target="_blank" title="Siga no Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
+            <p>&copy; 2026 Carlos Davi Vieira Bastos. Todos os direitos reservados.</p>
+            <p class="dev-credits">Desenvolvido sob medida.</p>
+        </div>
+    </footer>
+
+    <!-- Script Simples para abrir e fechar as janelas modais -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

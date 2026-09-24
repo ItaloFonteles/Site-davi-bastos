@@ -1,0 +1,516 @@
+:root {
+    --bg-dark: #333333;       
+    --bg-darker: #222222;     
+    --accent-copper: #c48270; 
+    --accent-light: #d89b8a;  
+    --bg-light: #f4f4f4;      
+    --text-color: #444444;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: var(--bg-darker);
+    color: var(--white);
+    padding: 20px 0;
+    border-bottom: 3px solid var(--accent-copper);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-db {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--accent-copper);
+    border: 2px solid var(--accent-copper);
+    padding: 5px 10px;
+}
+
+.logo-text h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.logo-text p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #b0b0b0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-copper);
+}
+
+.btn-nav {
+    background-color: var(--accent-copper);
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.btn-nav:hover {
+    background-color: var(--accent-light);
+    color: var(--white);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(34, 34, 34, 0.85), rgba(34, 34, 34, 0.85)), url('tema.jpg') no-repeat center center/cover;
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(196, 130, 112, 0.2);
+    color: var(--accent-light);
+    border: 1px solid var(--accent-copper);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 36px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: var(--white);
+}
+
+.hero p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #cccccc;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: #25d366;
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-copper);
+    color: var(--accent-copper);
+}
+
+/* Sections */
+.section {
+    padding: 80px 0;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.section h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    color: var(--bg-darker);
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #666;
+}
+
+/* Seção Sobre com Foto - Ajuste de Enquadramento */
+.about-image-box {
+    text-align: center;
+    background: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.about-photo {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 4px;
+}
+
+.about-photo-caption {
+    margin-top: 15px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: var(--bg-darker);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.about-text-box p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Cards & Boxes */
+.oab-box {
+    margin-top: 25px;
+    background: var(--white);
+    padding: 15px;
+    border-left: 4px solid var(--accent-copper);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.oab-box p {
+    margin: 5px 0;
+    color: var(--bg-dark);
+}
+
+/* Secção de Localização (Fundo Expandido com tema2.jpg) */
+.location-section {
+    background: linear-gradient(rgba(26, 26, 26, 0.88), rgba(26, 26, 26, 0.88)), url('tema2.jpg') no-repeat center center/cover;
+    padding: 80px 0;
+}
+
+.location-section h3 {
+    color: var(--white);
+}
+
+.location-section .subtitle {
+    color: #cccccc;
+}
+
+.card-info {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+    height: 100%;
+}
+
+.card-info h4 {
+    font-family: 'Cinzel', serif;
+    margin-bottom: 15px;
+    color: var(--bg-darker);
+}
+
+.card-info p {
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-info i {
+    color: var(--accent-copper);
+}
+
+/* Estilos para os links do Instagram */
+.insta-link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.insta-link:hover {
+    color: var(--accent-copper);
+}
+
+.map-box {
+    background: var(--white);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card-service {
+    background: var(--white);
+    padding: 35px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.card-service:hover {
+    transform: translateY(-5px);
+    border-bottom: 3px solid var(--accent-copper);
+}
+
+.card-service i {
+    font-size: 32px;
+    color: var(--accent-copper);
+    margin-bottom: 20px;
+}
+
+.card-service h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--bg-darker);
+}
+
+.card-service p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    color: var(--accent-copper);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* ================= ESTILOS DAS JANELAS MODAIS (POP-UPS) ================= */
+.modal-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: modalFade 0.3s ease;
+    overflow: hidden;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes modalFade {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.modal-close:hover {
+    color: var(--bg-darker);
+}
+
+.modal-header {
+    padding: 25px 25px 15px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    color: var(--bg-darker);
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+.modal-desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.modal-body h4 {
+    font-size: 15px;
+    color: var(--bg-darker);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.modal-body ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.modal-body ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.modal-alert {
+    background-color: #fbf1ed;
+    border: 1px solid #ebd3cd;
+    color: var(--bg-darker);
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-whatsapp-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #2e0811; 
+    color: var(--white);
+    padding: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.modal-whatsapp-btn:hover {
+    background-color: #4a0d1d;
+}
+
+/* Footer (Rodapé sólido para fechar a página) */
+footer {
+    background-color: var(--bg-darker);
+    color: #aaaaaa;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 13px;
+    border-top: 3px solid var(--accent-copper);
+}
+
+footer .logo {
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+footer .logo h2 {
+    font-size: 16px;
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+.social-footer {
+    margin-bottom: 20px;
+}
+
+.social-footer a {
+    color: var(--white);
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-footer a:hover {
+    color: var(--accent-copper);
+}
+
+.dev-credits {
+    margin-top: 5px;
+    color: var(--accent-copper);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    .hero h2 {
+        font-size: 26px;
+    }
+    nav {
+        display: none;
+    }
+}
